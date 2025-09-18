@@ -50,32 +50,35 @@
       width: 100%;
     }
     @media (min-width: 1024px) {
-      .tagline {
+      .tagline, .services {
         white-space: nowrap;
         text-align: center;
         color: #d8d8d8;
         margin-top: 1rem;
+        font-size: 1.5rem;
       }
     }
     @media (max-width: 1023px) {
-      .tagline {
+      .tagline, .services {
         text-align: center;
         color: #d8d8d8;
         margin-top: 1rem;
+        font-size: 1.2rem;
       }
     }
-    .services {
-      color: #d8d8d8;
-      font-size: 1rem;
-      margin-top: 2rem;
-      text-align: center;
+    .services-container {
+      position: fixed;
+      bottom: 70px;
+      width: 100%;
+      z-index: 10;
+      background: transparent;
     }
     .email {
       text-align: center;
       margin-top: 0.5rem;
       width: 100%;
     }
-  </style>
+</style>
 
   <script type="application/ld+json">
   {
@@ -121,11 +124,11 @@
             Charles is a full-service e-commerce agency, built for brands ready to grow.
           </p>
           <p class="email mbr-fonts-style mb-0 align-center display-4">
-            <a href="mailto:hello@charlesdx.com" class="text-primary">hello at charlesdx.com</a>
+            <a href="mailto:hello@charlesdx.com" class="text-primary"><span style="unicode-bidi:bidi-override; direction: rtl;">moc.xdselrahc@olleh</span></a>
           </p>
-          <p class="services mbr-fonts-style mb-0 align-center display-4">
+          <div class="services-container"><p class="services mbr-fonts-style mb-0 align-center display-4">
             Strategy | Performance | Operations | Creative | Supply Chain | Product Development
-          </p>
+          </p></div>
         </div>
       </div>
     </div>
@@ -137,7 +140,7 @@
         <div class="col-12 mt-5">
           <p class="mbr-fonts-style copyright display-7">
             © Copyright 2025 CharlesDX Group Inc. - All Rights Reserved
-          </p>
+          </p></div>
         </div>
       </div>
     </div>
