@@ -123,9 +123,17 @@
           <p class="tagline mbr-fonts-style mb-0 align-center display-4">
             Charles is a full-service e-commerce agency, built for brands ready to grow.
           </p>
-          <p class="email mbr-fonts-style mb-0 align-center display-4">
-            <a href="mailto:hello@charlesdx.com" class="text-primary"><span style="unicode-bidi:bidi-override; direction: rtl;">moc.xdselrahc@olleh</span></a>
-          </p>
+          <p class="email mbr-fonts-style mb-0 align-center display-4" id="email"></p>
+          <script>
+            const user = "hello";
+            const domain = "charlesdx.com";
+            const email = `${user}@${domain}`;
+            const link = document.createElement("a");
+            link.href = `mailto:${email}`;
+            link.className = "text-primary";
+            link.textContent = email;
+            document.getElementById("email").appendChild(link);
+          </script>
           <div class="services-container"><p class="services mbr-fonts-style mb-0 align-center display-4">
             Strategy  |  Performance  |  Marketplace Ops  |  Creative  |  Supply Chain  |  Product Development
           </p></div>
